@@ -76,13 +76,4 @@ return {
       )
     end,
   },
-  {
-    "github/copilot.vim",
-    event = "InsertEnter",
-    autoStart = true,
-    config = function()
-      vim.cmd "imap <silent><script><expr> <C-e> copilot#Accept('<CR>'"
-      vim.cmd "let g:copilot_no_tab_map = v:true"
-    end,
-  },
 }
